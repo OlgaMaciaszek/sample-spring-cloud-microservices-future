@@ -3,14 +3,10 @@ spring:
     name: gateway-service
   cloud:
     consul:
-      host: 192.168.99.100
+#      host: 192.168.99.100
       config:
         format: YAML
       discovery:
         register-health-check: false
-
-    loadbalancer:
-      ribbon:
-        enabled: false
 
 server.port: 8080
